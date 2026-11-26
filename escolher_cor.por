@@ -1,7 +1,7 @@
 programa {
   funcao inicio() {
     cadeia cor_preferida
-    
+
     escreva("Digite a inicial da sua cor favorita (b para blue, r para red)\n")
     leia(cor_preferida)
 
