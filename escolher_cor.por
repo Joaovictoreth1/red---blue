@@ -1,19 +1,16 @@
 programa {
   funcao inicio() {
-    caracter cor_preferida
+    cadeia cor_preferida
     
     escreva("Digite a inicial da sua cor favorita (b para blue, r para red)\n")
     leia(cor_preferida)
 
-    escolha (cor_preferida) {
-      caso 'b':
-        escreva("Cor azul")
-        pare
-      caso 'r':
-        escreva("Cor vermelha")
-        pare
-      caso contrario:
-        escreva("Nenhuma das anteriores")
+    se (cor_preferida == "b" ou cor_preferida == "B") {
+      escreva("Cor azul")
+    } senao se (cor_preferida == "r" ou cor_preferida == "R") {
+      escreva("Cor vermelha")
+    } senao {
+      escreva("Opção inválida. Digite B ou R.")
     }
   }
 }
